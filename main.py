@@ -46,10 +46,33 @@ saludo = 'Hola mundo'
 #print ('Su capital seria de:', Capital)
 
 #Ejercicio 10
-payaso= float( imput('Digite el numero de payasos vendidos en el ultimo pedido:'))
-muñeca= float( imput('Digite el numero de mueñcas vendidos en el ultimo pedido:'))
-peso payaso= int( 112)
-peso muñeca= int(75)
-peso total= ((payaso * peso payaso) + (muñeca*peso muñeca))
-print('El peso total es:', peso total)
+#payaso= float( imput('Digite el numero de payasos vendidos en el ultimo pedido:'))
+#muñeca= float( imput('Digite el numero de mueñcas vendidos en el ultimo pedido:'))
+#peso payaso= int( 112)
+#peso muñeca= int(75)
+#peso total= ((payaso * peso payaso) + (muñeca*peso muñeca))
+#print('El peso total es:', peso total)
 
+#Ejercicio 11
+#numero=0
+#numero= int(input('Digite un numero entero:'))
+#suma= numero*(numero+1)/2
+#if suma>20:
+ #print(str(numero) + str(suma) +    '¡Que gran numero!')
+#if suma <20:
+ # print( str(suma))
+
+n= 0
+m=0
+n=int(input('Ingrese un numero entero:'))
+m =int(input('Ingrese un numero entero:'))
+c= n//m
+print('El cociente de la division de estos dos numeros es:' + str(c))
+r= n%m
+print('El resto de la divion de estos dos numeros es:' + str(r))
+if c<1:
+  print('El divisor es mayor al dividendo')
+if c>1:
+  print('El divisor es menor que el dividendo')
+if c==1:
+  print('El divisor y el dividendo son iguales')
