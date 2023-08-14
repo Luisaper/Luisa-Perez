@@ -62,17 +62,46 @@ saludo = 'Hola mundo'
 #if suma <20:
  # print( str(suma))
 
-n= 0
-m=0
-n=int(input('Ingrese un numero entero:'))
-m =int(input('Ingrese un numero entero:'))
-c= n//m
-print('El cociente de la division de estos dos numeros es:' + str(c))
-r= n%m
-print('El resto de la divion de estos dos numeros es:' + str(r))
-if c<1:
-  print('El divisor es mayor al dividendo')
-if c>1:
-  print('El divisor es menor que el dividendo')
-if c==1:
-  print('El divisor y el dividendo son iguales')
+#n= 0
+#m=0
+#n=int(input('Ingrese un numero entero:'))
+#m =int(input('Ingrese un numero entero:'))
+#c= n//m
+#print('El cociente de la division de estos dos numeros es:' + str(c))
+#r= n%m 
+#print('El resto de la divion de estos dos numeros es:' + str(r))
+#if c<1:
+ # print('El divisor es mayor al dividendo')
+#i3f c>1:
+ # print('El divisor es menor que el dividendo')
+#if c==1:
+ # print('El divisor y el dividendo son iguales')
+
+#invertir=float(input('Digite la cantidad a invertir:'))
+#interes=float(input('Digite el interes anual:'))
+#años=int(input('Digite el numero de años:'))
+#apital= (invertir*((interes//100)+1)**años)
+#print(capital)
+#if capital<100000:
+ # print(str(capital)+'Baja rentabilidad')
+#if 100000<capital>1000000:
+ # print(str(capital)+'Rentabilidad moderada')
+#if capital>1000000:
+  #print(str(capital)+'Es una buena inversion')
+
+#payasos= int(input('Digite cantidad de payasos vendidos en el ultimo pedido:'))
+#muñecas= int(input('Digite cantidad de muñecas vendidos en el ultimo pedido:'))
+#x=""
+#pedido= ((112*payasos)+(75*muñecas))
+#if pedido<30000:
+ # print('El peso del pedido es:'+ str(pedido))
+#if pedido>30000:
+ # print('El peso del pedido es:'+ str(pedido))
+#if pedido>30000:
+ #x= input('Desea enviar este pedido:')
+## print('Contenedor enviado')
+#if x=='no':
+ # print('Contenedor no enviado')
+
+dinero= float(input('Digite la cantidad de dinero que depositara:'))
+if 0<dinero>1000000
