@@ -3,7 +3,7 @@
 #print ('Hola mundo')
 
 #Ejercicio 2:
-saludo = 'Hola mundo'
+#saludo = 'Hola mundo'
 #print(saludo)
 
 #Ejercicio 3:
@@ -103,5 +103,90 @@ saludo = 'Hola mundo'
 #if x=='no':
  # print('Contenedor no enviado')
 
-dinero= float(input('Digite la cantidad de dinero que depositara:'))
-if 0<dinero>1000000
+#dinero= float(input('Digite la cantidad de dinero que depositara:'))
+#if 0<dinero>1000000
+
+#num1= int(input('Dar un numero:'))
+#num2= int(input('Dar un numero:'))
+#def numeros(num1, num2):
+ # return num1 + num2
+#numero = numeros(num1, num2)
+#print(numero)
+
+#num1= int(input('Dar un numero:'))
+#num2= int(input('Dar un numero:'))
+#def numeros(x,y):
+ # return num1 - num2
+#numero = numeros(num1,num2)
+#print(numero)
+
+#num1= int(input('Dar un numero:'))
+#num2= int(input('Dar un numero:'))
+#def numeros(x,y):
+ # return num1*num2
+#numero = numeros(num1,num2)
+#print(numero)
+
+
+#num1= int(input('Dar un numero:'))
+#num2= int(input('Dar un numero:'))
+#x= num1
+#y= num2
+#def numeros(x,y):
+ # return num1//num2
+#if num2 ==0:
+ # print('No es valido') 
+#numero = numeros(num1,num2)
+#print(numero)
+
+#num1= int(input('Dar un numero:'))
+#um2= int(input('Dar un numero:'))
+#def numeros(num1, num2):
+ # return num1 + num2
+#numero = numeros(num1, num2)
+#print(numero)
+
+#num1= int(input('Dar un numero:'))
+#num2= int(input('Dar un numero:'))
+#def numeros(x,y):
+ # return num1 - num2
+#numero = numeros(num1,num2)
+#print(numero)
+
+#num1= int(input('Dar un numero:'))
+#num2= int(input('Dar un numero:'))
+#def numeros(x,y):
+ # return num1*num2
+#numero = numeros(num1,num2)
+#print(numero)
+
+
+#num1= int(input('Dar un numero:'))
+#num2= int(input('Dar un numero:'))
+#x= num1
+#y= num2
+#num1= int(input('Dar un numero:'))
+#num2= int(input('Dar un numero:'))
+#if num2 ==0:
+ # print('No es valido') 
+#numero = numeros(num1,num2)
+#print(numero)
+
+
+num1= x
+num2 = y
+operacion= input('Indique la operacion que desea:')
+num1= float(input('Dar un numero:'))
+num2= float(input('Dar un numero:'))
+if operacion=='suma':
+def numeros(x, y):
+  return num1 + num2
+if  operacion=='resta':
+def numeros(x, y):
+  return num1 - num2
+if  operacion=='multiplicacion':
+def numeros(x, y):
+  return num1 * num2
+if  operacion=='division':
+def numeros(x, y):
+  return num1 // num2
