@@ -172,7 +172,7 @@
 #numero = numeros(num1,num2)
 #print(numero)
 
-
+''''
 num1= x
 num2 = y
 operacion= input('Indique la operacion que desea:')
@@ -190,3 +190,67 @@ def numeros(x, y):
 if  operacion=='division':
 def numeros(x, y):
   return num1 // num2
+'''
+''''
+#****************************************************************************
+def intereses(inv):
+  d= inv
+  if (d>0 and d<1000000):
+    return 2
+  elif(d>=1000000 and d <2000000):
+    return 5
+  else:
+    return 7
+
+def calbalance(int, inv):
+  n= int
+  d= inv
+  return round((d*(1+(n/100))), 2)
+
+def ctahorro():
+  #inversion,interes,b1,b2,b3=0.0
+  inversion= float(input("Ingrese el valor de la inversion: "))
+  interes= intereses (inversion)
+  b1= calbalance(interes,inversion)
+  b2=calbalance(interes, b1)
+  b3= calbalance(interes, b2)
+  print(" Balance 1: " + str(b1) + " Balance 2: " + str(b2) + " Balance 3: "+str(b3))
+
+ctahorro()
+'''
+def circulo(radio):
+  return (3.14159*(radio**2))
+
+def triangulo(base,altura):
+ 
+  return ((base*altura)/2)
+
+def cuadrado(lado):
+  return (lado*lado)
+
+def resultados():
+  area= 0.0
+  figura=""
+  figura= input("Digite figura a calcular: ")
+  if (figura.lower()=="triangulo"):
+    b=0.0
+    a=0.0
+    b= float(input("Digite base del triangulo: "))
+    a= float(input("Digite altura del triangulo: "))
+    area= triangulo(b,a)
+    print("El area del triangulo es:", area)
+
+  if (figura.lower()=="circulo"):
+    radio= 0.0
+    radio= float(input("Digite el radio del circulo: "))
+    area1= circulo(radio)
+    print("El area del circulo es:", area1)
+
+  if (figura.lower()=="cuadrado"):
+    lado=0.0
+    lado= float(input("Digite el lado del cuadrado: "))
+    area= cuadrado(lado)
+    print("El area del cuadrado es:", area)
+  
+resultados()
+
