@@ -218,6 +218,7 @@ def ctahorro():
 
 ctahorro()
 '''
+''''
 def circulo(radio):
   return (3.14159*(radio**2))
 
@@ -253,4 +254,50 @@ def resultados():
     print("El area del cuadrado es:", area)
   
 resultados()
+'''
+''''
+def maximo(a,b):
+  if a>b:
+    return a
+  else:
+    return b
+
+def minimo(a,b):
+  if a<b:
+    return a
+  else: 
+    return b
+
+#programa principal
+x=int(input("un numero: "))
+y=int(input("otro numero: "))
+print(maximo(x-3,minimo(x+2,y-5)))
+'''
+
+def descuentop (p):
+  if p>=2000000:
+    return (p+(p*0.10))
+
+def descuentos (o):
+  if o=="si":
+    return (o+(o*0.5))
+  if o=="no":
+    return (p+(p*0.10))
+
+def iva(n,r):
+  n*0.20
+  r*0.20
+  
+  
+#principal
+
+p= float(input("Digite el precio de su estereo:"))
+resultado= descuentop(p)
+o= input("¿La marca de su producto es NOSY?:")
+resultado= descuentos(o)
+
+  
+
+
+
 
