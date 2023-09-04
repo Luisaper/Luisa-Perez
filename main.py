@@ -308,7 +308,7 @@ def suma(a,b):
 
 suma(2,4)
 
-
+'''
 #Año bisiesto 1.
 def agno (a):
   if a%100 == 0:
@@ -340,15 +340,40 @@ print (perros(a,p))
 
 
 #Temperaturas 3.
-def kelvin(c,f,k):
-  return (k-272,15)
-  return 
+def kel(v,o):
+  if (c):
+    print(C = v - 273.15)
+  elif (f):
+    print ( F = 1.8*(v - 273.15)+ 32)
 
-def cel
+def cel(v,o):
+  if (k):
+    print( K = v + 273.15)
+  elif (f):
+    print(f= (v-32) * 5/9)
+
+def fah(v,o):
+  if (c):
+    print(c= (v - 32) * 5/9)
+  elif (k):
+    print(K = 5/9 (v - 32) + 273.15)
+
+principal()
+v= int(input("Digite la temperatura:"))
+escala= input("Digite la escala:")
+if escala== Kelvin:
+  kel(v,o)
+elif escala== Celsius:
+  cel(v,o)
+elif escala== Fahrenheit:
+  fah(v,o)
+
+input("Digite la escala a la que desea llegar:")
+
 
 #Discoteca 4.
 
-'''
+
 
 #Volumen 5.
 def cubo(l):
@@ -365,7 +390,7 @@ def volumen():
   if recipiente== "cilindro":
    r= int(input("Digite el radio del cilindro:"))
    h= int(input("Digite la altura del cilindro:"))
-    print("El volumen del cilindro es:", cilindro)
+    print("El volumen del cilindro es:", cilindro(r,h))
     
   elif recipiente== "cubo":
    l= int(input("Digite el lado del cubo:"))
@@ -373,11 +398,11 @@ def volumen():
     
   elif recipiente=="esfera":
    r= int(input("Digite el radio de la esfera:"))
-    print("El volemn de la esfera es:", esfera)
+    print("El volumen de la esfera es:", esfera)
 
 volumen()
 
-#
+#Cajas 5.
 
     
     
