@@ -337,9 +337,57 @@ a= int(input("Digite la altura de su perro:"))
 p= int(input("Digite el peso de su perro:"))
 print (perros(a,p))
 
+
+
+#Temperaturas 3.
+def kelvin(c,f,k):
+  return (k-272,15)
+  return 
+
+def cel
+
+#Discoteca 4.
+
 '''
 
+#Volumen 5.
+def cubo(l):
+  return l*l*l
+
+def cilindro(r,h):
+  return 3.1416*(r**2)*h
+
+def esfera(r):
+  return (4/3)*3.1416*(r**3)
+  
+def volumen():
+  recipiente= input("¿Que tipo de recipiente necesita?:")
+  if recipiente== "cilindro":
+   r= int(input("Digite el radio del cilindro:"))
+   h= int(input("Digite la altura del cilindro:"))
+    print("El volumen del cilindro es:", cilindro)
+    
+  elif recipiente== "cubo":
+   l= int(input("Digite el lado del cubo:"))
+    print ("El volumen del cubo es:", cubo)
+    
+  elif recipiente=="esfera":
+   r= int(input("Digite el radio de la esfera:"))
+    print("El volemn de la esfera es:", esfera)
+
+volumen()
+
 #
+
+    
+    
+  
+    
+    
+    
+    
+      
+    
 
 
   
