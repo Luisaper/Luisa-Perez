@@ -1,17 +1,17 @@
 #Mi primer Archivo
 #Ejercicio 1:
 #print ('Hola mundo')
-
+''''
 #Ejercicio 2:
-#saludo = 'Hola mundo'
-#print(saludo)
+saludo = 'Hola mundo'
+print(saludo)
 
 #Ejercicio 3:
 #nombre = input("Introduzca nombre de usuario: ")
 #print('Hola'+ nombre+'!')
 
 #Ejercicio 4:
-#print(((3+2)/(2*5))**2)
+print(((3+2)/(2*5))**2)
 
 
 #Ejercicio 5:
@@ -43,7 +43,7 @@
 #interes= float( input('Ingrese interes anual:'))
 #años= float( input('Ingrese el numero de años:'))
 #Capital= round (invertir*((interes/100 + 1)**años),2)
-#print ('Su capital seria de:', Capital)
+#print ('Su capital seria de:', Capital) 
 
 #Ejercicio 10
 #payaso= float( imput('Digite el numero de payasos vendidos en el ultimo pedido:'))
@@ -171,7 +171,7 @@
  # print('No es valido') 
 #numero = numeros(num1,num2)
 #print(numero)
-
+'''
 ''''
 num1= x
 num2 = y
@@ -192,7 +192,7 @@ def numeros(x, y):
   return num1 // num2
 '''
 ''''
-#****************************************************************************
+#****
 def intereses(inv):
   d= inv
   if (d>0 and d<1000000):
@@ -273,7 +273,7 @@ x=int(input("un numero: "))
 y=int(input("otro numero: "))
 print(maximo(x-3,minimo(x+2,y-5)))
 '''
-
+''''
 def descuentop (p):
   if p>=2000000:
     return (p+(p*0.10))
@@ -295,6 +295,55 @@ p= float(input("Digite el precio de su estereo:"))
 resultado= descuentop(p)
 o= input("¿La marca de su producto es NOSY?:")
 resultado= descuentos(o)
+'''
+'''
+def saludar():
+  print("Hola")
+
+saludar()
+
+
+def suma(a,b):
+  return a+b
+
+suma(2,4)
+
+
+#Año bisiesto 1.
+def agno (a):
+  if a%100 == 0:
+    print("No lo es")
+  elif a%4 == 0:
+    print("Es bisiesto")
+  elif a%400 == 0:
+    print("Es bisiesto")
+  else:
+    print("No lo es")
+    
+a= int(input("Digite el año: "))
+agno(a)
+
+
+#Perros 2.
+def perros(a,p):
+  if a<= 30 and p< 15:
+    print("Es un perro pequeno")
+  elif 30<= a <=40 and 15<= p <= 25:
+    print("Es un perro mediano")
+  elif 40<= a <=60 and 25<= p <=45:
+    print("Es un perro grande")
+
+a= int(input("Digite la altura de su perro:"))
+p= int(input("Digite el peso de su perro:"))
+print (perros(a,p))
+
+'''
+
+#
+
+
+  
+  
 
   
 
