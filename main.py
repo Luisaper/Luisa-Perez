@@ -337,7 +337,7 @@ a= int(input("Digite la altura de su perro:"))
 p= int(input("Digite el peso de su perro:"))
 print (perros(a,p))
 
-'''
+
 
 #Temperaturas 3.
 def kel(v,o):
@@ -372,6 +372,74 @@ input("Digite la escala a la que desea llegar:")
 
 principal()
 
+
+def intereses(inv):
+  d= inv
+  if (d>0 and d<1000000):
+    return 2
+  elif(d>=1000000 and d <2000000):
+    return 5
+  elif (2000000<d):
+    return 7
+
+def balance(int, inv):
+  n= int
+  d= inv
+  return round((d*(1+(n/100))), 2)
+
+def cuenta():
+  inversion= float(input("Ingrese el valor de la inversion: "))
+  interes= intereses (inversion)
+  a1= balance(interes,inversion)
+  a2= balance(interes, a1)
+  a3= balance(interes, a2)
+  print(" Balance 1: " + str(a1) + " Balance 2: " + str(a2) + " Balance 3: "+str(a3))
+
+cuenta()  
+
+def porcentaje(w,z):
+
+    return (w*(1+(z/100)))
+
+ 
+
+w=int(input("Ingrese valor: "))
+
+z=int(input("Ingrese porcentaje: "))
+
+print(round(porcentaje(w-20000, z+2),2))
+'''
+def jamon (com):
+  n=com
+  if (n==2):
+    return 2
+  elif (2<n<5):
+    return 5
+  elif (n>5):
+    return 100
+
+def arepas(com):
+  return 3
+
+#int=interes
+def formula(com,int):
+  n=com
+  i=int
+  return (n*(1+(i/100)))
+  
+
+def compras():
+ int(input("¿Cuantos panes comprara?:"))
+ int(input("¿Cuantos jamones comprara?:"))
+ int(input("¿Cuantas arepas comprara?:"))
+
+
+#Valor jamón: 7000
+#Valor Arepas: 6000
+#Valor pan tajado: 6500
+
+  
+    
 
     
     
