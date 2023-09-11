@@ -171,15 +171,15 @@ print(((3+2)/(2*5))**2)
  # print('No es valido') 
 #numero = numeros(num1,num2)
 #print(numero)
-'''
-''''
+
+
 num1= x
 num2 = y
 operacion= input('Indique la operacion que desea:')
 num1= float(input('Dar un numero:'))
 num2= float(input('Dar un numero:'))
 if operacion=='suma':
-def numeros(x, y):
+def numeros(x,y):
   return num1 + num2
 if  operacion=='resta':
 def numeros(x, y):
@@ -190,8 +190,8 @@ def numeros(x, y):
 if  operacion=='division':
 def numeros(x, y):
   return num1 // num2
-'''
-''''
+
+
 #****
 def intereses(inv):
   d= inv
@@ -408,7 +408,7 @@ w=int(input("Ingrese valor: "))
 z=int(input("Ingrese porcentaje: "))
 
 print(round(porcentaje(w-20000, z+2),2))
-'''
+
 def jamon (com):
   n=com
   if (n==2):
@@ -439,7 +439,97 @@ def compras():
 #Valor pan tajado: 6500
 
   
-    
+a=0
+while (a<=10):
+  print(a)
+  a=a+1
+
+
+def suma(num1,num2):
+  num1= int(input('Dar un numero:'))
+  num2= int(input('Dar un numero:'))
+def numeros(num1, num2):
+  return num1 + num2
+numero = numeros(num1, num2)
+print(numero)
+
+num1= int(input('Dar un numero:'))
+num2= int(input('Dar un numero:'))
+def numeros(x,y):
+  return num1 - num2
+numero = numeros(num1,num2)
+print(numero)
+
+num1= int(input('Dar un numero:'))
+num2= int(input('Dar un numero:'))
+def numeros(x,y):
+  return num1*num2
+numero = numeros(num1,num2)
+print(numero)
+
+
+num1= int(input('Dar un numero:'))
+num2= int(input('Dar un numero:'))
+x= num1
+y= num2
+def numeros(x,y):
+  return num1//num2
+if num2 ==0:
+  print('No es valido') 
+numero = numeros(num1,num2)
+print(numero)
+'''
+
+def Menu():
+  print("Calculadora
+  1.Suma
+  2.Resta
+  3.Meltiplicacion
+  4.Division
+  5.Salir)
+
+def suma():
+  a= float(input("Ingrese primer numero a sumar:"))
+  b= float(input("Ingrese segundo numero a sumar:")) 
+  return a+b
+
+def resta():
+  c= float(input("Ingrese primer numero a restar:"))
+  d= float(input("Ingrese segundo numero a sumar:"))
+  return c-d
+
+def multiplicacion():
+  e= float(input("Ingrese primer numero a restar:"))
+  f= float(input("Ingrese segundo numero a multiplicar:"))
+  return e*f
+
+def division():
+   g= float(input("Ingrese primer numero a dividir:"))
+   h= float(input("Ingrese segundo numero a dividir:"))
+   if h==0:
+     print("Error, division entre 0")
+   else:
+     return g/h
+   
+def calculadora():
+    Menu()
+    opcion=0
+
+    while opcion!=5:
+      opcion=int(input("Seleccione opcion"))
+      if (opcion==1):
+        print("La suma es:", suma())
+      elif (opcion==2):
+        print("La resta es:", resta())
+      elif (opcion==3):
+        print("La multiplicacion es:", multiplicacion())
+      elif (opcion==4):
+        print ("La division es:", division())
+        
+        
+  
+  
+  
 
     
     
