@@ -478,8 +478,8 @@ if num2 ==0:
   print('No es valido') 
 numero = numeros(num1,num2)
 print(numero)
-'''
 
+#######3###3###3#
 def Menu():
   print("Calculadora
   1.Suma
@@ -528,7 +528,54 @@ def calculadora():
         
         
   
+
+for c in range(1,10,3):
+  print(c)
+
+
+#ADIVINAR NUMERO 
+import random
+def adivina():
+  numero = random.randint(1,100)
+  adivinado = False
   
+  while not adivinado:
+    intento= int(input("Adivina el numero: "))
+    if intento ==numero:
+      print("¡Correcto! Has adivinado el numero.")
+    elif intento<numero:
+      print("El numero es mayor.")
+    else:
+      print("El numero es menor.")
+
+adivina()
+
+
+#Numero tabla multiplicar 
+def numero():
+  n= int(input("Digite su numero:"))
+  for i in range(1,11):
+    resultado =n*i
+    print(n,"x",i,"=",resultado)
+
+numero()
+'''
+
+#NUMERO FACTORIAL
+def factorial():
+  n= int(input("Ingrese un numero:"))
+  factorial=1
+  
+  for i in range (1,n+1):
+    factorial *=i
+    
+  print("El factorial de", n, "es", factorial)
+
+factorial()
+
+
+
+
   
 
     
