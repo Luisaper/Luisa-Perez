@@ -560,7 +560,7 @@ def numero():
     print(n,"x",i,"=",resultado)
 
 numero()
-'''
+
 
 #NUMERO FACTORIAL
 def factorial():
@@ -573,6 +573,18 @@ def factorial():
   print("El factorial de", n, "es", factorial)
 
 factorial()
+
+
+
+#CARACTERES
+def impcaracter():
+  cadena= input("Ingrese una palabra o frase: ")
+  
+  for caracter in cadena:
+    print(cadena)
+
+impcaracter()
+'''
 
 
 
