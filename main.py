@@ -584,29 +584,54 @@ def impcaracter():
     print(cadena)
 
 impcaracter()
+
+#LISTAS
+def listas1():
+    lista=[]
+    lista2=[]
+
+    for i in range(1,6):
+        lista.append(input("ingrese una cadena:"))
+
+    lista2 = lista
+    lista2.reverse()
+
+    for j in lista2:
+        print(j)
+
+listas1()
+
+
+#VALORES ALEATRIOS
+import random
+def aleatorio():
+  lista_aleatorio=[]
+
+  for indice in range(1,11):
+    lista_aleatorio.append(random.randint(1,10))
+  
+  for numero in lista_aleatorio:
+    print("Para el numero", numero, "su cuadrado es:", numero**2,"y su cubo es:", numero**3)
+
+
+aleatorio()
 '''
 
-
-
-
+#NOTAS
+def notas():
+  lista = []
   
+  for i in range (1,6):
+    while True:
+      nota = int(input("Digite su nota:"))
+      if nota>=0 and nota<=10:break
+
+    lista.append(nota)
+  
+  print("Sus notas son:", lista, "Su promedio es:", (sum(lista))/2, ". La nota mas alta que ha sacado es", max(lista), "y la mas baja es", min(lista))
+
+notas()
 
     
     
   
-    
-    
-    
-    
-      
-    
-
-
-  
-  
-
-  
-
-
-
-
