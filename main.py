@@ -615,7 +615,7 @@ def aleatorio():
 
 
 aleatorio()
-'''
+
 
 #NOTAS
 def notas():
@@ -632,6 +632,67 @@ def notas():
 
 notas()
 
-    
-    
+
+
+#LISTA DE NUMEROS
+def listas():
+    lista=[1,2,3,4,5,6,7,8,9,10]
+      
+    lista.reverse()
   
+    for j in lista:
+        print(j, end=", ")
+
+
+   
+listas()
+
+
+#ASIGNATURAS
+def asignaturas():
+    lista=["Matematicas", "Fisica", "Quimica", "Historia", "Lenguaje"]
+    
+    for j in lista:
+      while
+        nota = float(input("Digite su nota en "+ j+": "))
+          
+    if nota>=3:
+        lista.remove(j)
+
+    print("Tienes que repetir: "+ str(lista))
+        
+      
+  
+asignaturas()
+
+
+
+#ABECEDARIO
+def abece():
+   letras=["a", "b", "c", "d", "e", "f", "g", "h", "i", "j","k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+   for i in range(len(letras),1,-1):
+    if i%3==0: 
+   print(letras)
+
+abece()
+'''
+
+
+#PALABRAS
+def palabras():
+  
+  palabra= input("Digite su palabra:")
+  palabra_r = palabra
+  palabra= list(palabra)
+  palabra_r = list(palabra_r)
+
+  palabra_r.reverse()
+  print(palabra_r)
+  
+  if palabra== palabra_r:
+    print("Es un palindromo")
+  else:
+    print("No es un palindromo")
+
+palabras()
