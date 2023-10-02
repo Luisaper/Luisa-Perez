@@ -480,7 +480,7 @@ if num2 ==0:
 numero = numeros(num1,num2)
 print(numero)
 
-#######3###3###3#
+##############
 def Menu():
   print("Calculadora
   1.Suma
@@ -676,7 +676,7 @@ def abece():
    print(letras)
 
 abece()
-'''
+
 
 
 #PALABRAS
@@ -696,3 +696,71 @@ def palabras():
     print("No es un palindromo")
 
 palabras()
+
+
+
+#CONTACTOS
+def menu():
+  print(""" Menu
+        1.Agregar contacto
+        2.Buscar contacto
+        3.Mostrar los contactos almacenados
+        4.Eliminar contactos
+        5.Salir""")
+
+def agregar_contacto(nombre,telefono,correo,lista2):
+  lista=["Nombre", "Numero de telefono", "Correo electronico"]
+  lista2.append(lista)
+
+def operaciones():
+    menu()
+    opcion=0
+    lista=["Nombre", "Numero de telefono", "Correo electronico"]
+    lista2=[]
+
+    while opcion!=5:
+      opcion=int(input("Seleccione opcion:"))
+        
+      if (opcion==1):
+        for j in lista:
+          contacto = input("Digite su "+ j+": ")
+          lista2.append(contacto)
+         
+      elif (opcion==2):
+        for j in lista:
+          buscar= input("Digite el nombre del contacto a buscar "+ j+": ")
+          print(lista2[buscar])
+         
+      elif (opcion==3):
+          print(lista2)
+         
+      elif (opcion==4):
+          eliminar= input("Digite el nombre del contacto a eliminar:")
+          lista2.remove(eliminar)
+
+operaciones()
+
+
+'''
+
+#JUEGO DE POKER
+
+import random
+
+def valor(valor,palo,carta):
+  valor=["A","2","3","4","5","6","7","8","9","10","J","K","Q"]
+  carta.append(valor)
+  palo=["corazon","pica","diamante","trebol"]
+  carta.append(palo)
+  
+
+def mazo():
+  valor.append(random.shuffle())
+
+  print(valor)
+
+
+  
+  
+  
+  
