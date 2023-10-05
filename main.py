@@ -741,26 +741,132 @@ def operaciones():
 operaciones()
 
 
-'''
+
 
 #JUEGO DE POKER
 
-import random
+def juego_cartas():  
+  palos = ["Corazones", "Diamantes", "Picas", "Tréboles"]
+  valores = ["2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"]
+  mazo = []
+  
+  for palo in palos:
+    for valor in valores:
+        carta = [valor, palo]
+        mazo.append(carta)  
+      
+  random.shuffle(mazo)
+       return mazo
+  
+def repartir_cartas(numero_jugadores, cartas_por_jugador):
+    mazo= juego_cartas()
+    jugadores = [[] for _ in range(numero_jugadores)]
+    for _ in range(cartas_por_jugador):
+        for jugador in jugadores:
+            carta = mazo.pop()
+            jugador.append(carta)
 
-def valor(valor,palo,carta):
-  valor=["A","2","3","4","5","6","7","8","9","10","J","K","Q"]
-  carta.append(valor)
-  palo=["corazon","pica","diamante","trebol"]
-  carta.append(palo)
+    for i, jugador in enumerate(jugadores):
+        print(f"Jugador {i + 1}: {jugador}")
+
+repartir_cartas(4,2)
+
+
+
+#VENTAS TIENDA
+def menu():
+  print(""" Menu
+        1.Agregar producto
+        2.Mostrar los productos almacenados
+        3.Mostrar ventas del dia 
+        4.Salir""")
+
+def agregar_producto(nombre, cantidad, precio, productos):
+    producto = [nombre, cantidad, precio]
+    productos.append(producto)
+
+def Registro_ventas():
+  productos = []
+  menu()
+  opcion=0
+  while opcion!=4:
+    opcion= int(input("Selecione Opción\n"))
+
+    if opcion == 1:
+      nombreprod=input("Escribe el nombre del producto: ")
+      cantidadprod=int(input("Escribe la cantidad del producto: "))
+      precioprod=float(input("Escribe el precio del producto: "))
+      
+      agregar_producto(nombreprod, cantidadprod, precioprod, productos)
+
+    elif opcion==2:
+      print("Los productos son: ", productos)
+
+    elif opcion==3:
+      venta_dia= sum(producto[1] * producto[2] for producto in productos )
+      print(f"La venta del dia es: ${venta_dia}")
+     
+    elif opcion==4:
+      print("Gracias por usar la app!. bye")
+      break
+    
+    else:
+      print("Opción Invalida")
+      
+Registro_ventas()
+
+
+
+#SUMAR MATRIZ
+def matriz(matrizx,matrizy):
+  resultado= []
+  
+  for i in range(len(matrizx)):
+    fila= []
+    for j in range(len(matrizx[i])):
+        suma = matrizx[i][j] + matrizy[i][j]
+        fila.append(suma)
+    resultado.append(fila)
+  return resultado
+
+matriz1 = [[1,2],[3,4]]  
+matriz2 = [[5,6],[7,8]]
+resultado1 = matriz(matriz1,matriz2)
+print (resultado1)
+
+
+#MATRIZ TRANSPUESTA
+def matriz_t(matriz):
+  transpuesta= []
+  for j in range(len(matriz[0])):
+    fila= []
+    for i in range(len(matriz)):
+      fila.append(matriz[i][j])
+    transpuesta.append(fila)
+  return transpuesta
+  
+matriz = [[2,4,6],[1,3,5],[2,4,6]]
+transpues = matriz_t(matriz)
+print(transpues)
+
+'''
+#MULTIPLICAR/SUMAR MATRIZ
+def matriz(matriz1,matriz2):
+    resultado= []  
+    for i in range(len(matriz1)):
+        fila= []
+        for j in range(len(matriz2[0])):
+            suma= 0
+            for k in range(len(matriz2)):
+                suma += matriz1[i][k] * matriz2[k][j]
+            fila.append(suma)
+        resultado.append(fila)
+    return resultado
+
+matriz1 = [[1,2],[3,4]]  
+matriz2 = [[5,6],[7,8]]
+resultado1 = matriz(matriz1,matriz2)
+print (resultado1)
   
 
-def mazo():
-  valor.append(random.shuffle())
-
-  print(valor)
-
-
-  
-  
-  
   
