@@ -849,7 +849,8 @@ matriz = [[2,4,6],[1,3,5],[2,4,6]]
 transpues = matriz_t(matriz)
 print(transpues)
 
-'''
+
+
 #MULTIPLICAR/SUMAR MATRIZ
 def matriz(matriz1,matriz2):
     resultado= []  
@@ -868,5 +869,7 @@ matriz2 = [[5,6],[7,8]]
 resultado1 = matriz(matriz1,matriz2)
 print (resultado1)
   
+'''
+
 
   
